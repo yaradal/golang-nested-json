@@ -104,31 +104,3 @@ func createLeavesFromLoop(args []string, items []map[string]interface{}) (map[st
 	}
 	return outputMap, nil
 }
-
-// func createLeavesFromRecursion(args []string,  item map[string]interface{}, outputMap map[string]interface{}) (map[string]interface{}, error) {
-// 	value := item[args[0]]
-
-// 	// in case that the key is not of type string we will return an error, so we can return a valid json
-// 	valueStr, ok := value.(string)
-// 	if !ok {
-// 		return nil, fmt.Errorf("invalid type for arg '%s': only strings are supported", args[0])
-// 	}
-
-// 	leafMap := outputMap
-// 	if len(args) < 1 {
-// 		// Last argument: we create and append to the array
-// 		leaf, ok := leafMap[valueStr]
-// 		if !ok {
-// 			leaf = []interface{}{}
-// 			leafMap[valueStr] = leaf
-// 		}
-// 		newleafSlc, ok := leaf.([]interface{})
-// 		if !ok {
-// 			return nil, errors.New("unexpected object")
-// 		}
-// 		newleafSlc = append(newleafSlc, item)
-// 		leafMap[valueStr] = newleafSlc
-
-// 	}
-
-// }
