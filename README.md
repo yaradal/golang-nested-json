@@ -24,11 +24,11 @@ To run the second task:
 ### Docker
 
 ```
-docker build -t flaconi-challenge ./
+docker build -t golang-nested-json ./
 ```
 then
 ```
-docker run -p=8080:8080 flaconi-challenge
+docker run -p=8080:8080 golang-nested-json
 ```
 
 ## Decisions and assumptions
